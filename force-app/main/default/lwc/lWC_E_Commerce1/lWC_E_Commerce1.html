@@ -1,0 +1,150 @@
+<template>
+    <lightning-card title="Home" icon-name="utility:home">
+   <div class="slds-box slds-p-around_small ">
+    <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+      <div class="slds-size_1-of-3">
+        <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+          <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+              
+            
+                
+                <span class="slds-assistive-text">Current Page:</span>
+                <span class="slds-m-right_large">Categoria </span>
+        
+             <lightning-button-menu>
+        
+                <lightning-menu-item value="MenuItemOne" label="Cellulari" onclick={Cellulari}></lightning-menu-item>
+                <lightning-menu-divider></lightning-menu-divider>
+                <lightning-menu-item value="MenuItemTwo" label="Computer portatili" onclick={ComputerPortatili}></lightning-menu-item>
+                <lightning-menu-divider></lightning-menu-divider>
+        
+            </lightning-button-menu>
+            
+            
+              
+          
+        </lightning-layout-item>
+
+
+
+        </div>
+      </div>
+
+
+      <div class="slds-size_1-of-3">
+        
+          <div class="slds-form-element slds-m-around_x-small  ">
+             
+            <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left slds-p-top_x-small">
+              <svg class="slds-icon slds-input__icon slds-input__icon_right slds-icon-text-default" aria-hidden="true">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+              </svg>
+              <input  type="text"  placeholder="Search..." class="slds-input "/>
+            </div>
+          </div>
+
+        
+      </div>
+    
+
+
+    <div class="slds-size_1-of-3">
+      <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+        <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+            
+       
+        <lightning-button label="Carrello" onclick={Carrello} icon-name="utility:cart" icon-position="right" variant="base" ></lightning-button>
+        
+      
+      </lightning-layout-item>
+
+    </div>  
+    </div>
+  </div>
+   
+   
+  
+   
+   
+   <lightning-layout multiple-rows vertical-align="top" horizontal-align="space">
+   
+   <div>
+   <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+   <div class="slds-box">
+   
+   <div class="tile-img slds-image-align_center">
+   
+   <img class ="slds-align_absolute-center" src={mR2} style = "height:35%; width:45%">
+   </div>
+   <div>
+     
+     <br>
+     <h1 style="font-weight:bold">IPHONE 13 PRO MAX 128GB VERDE ALPINO</h1>
+     <br>
+     
+     <p><lightning-formatted-text value="Display 6,7'' Super Retina XDR con ProMotion 120 Hz" ></lightning-formatted-text></p>
+     <p><lightning-formatted-text value="Penta Band - 5G - Wi-Fi - NFC - GPS" ></lightning-formatted-text></p>
+     <p><lightning-formatted-text value="Ceramic Shield - Acciaio inossidabile - Resistenza all'acqua IP68" ></lightning-formatted-text></p>
+           
+     <br>
+      
+     
+      <lightning-button class="myButton" label="Aggiungi al carrello" onclick={handleSearchKeyword} icon-name="utility:cart" icon-position="right" variant="base" ></lightning-button>
+   </div>
+   
+   </div>
+           </lightning-layout-item>
+   
+       </div>
+   
+   <div>
+       <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+           <div class="slds-box slds-m-around_small">
+           
+           <div class="tile-img">
+           
+           <img class ="slds-align_absolute-center" src={mR} style = "height:50%; width:50%">
+           </div>
+           <div>
+   
+             <br>
+             <h1 style="font-weight:bold">SAMSUNG GALAXY S22 256Gb PHANTOM WHITE</h1>
+             <br>
+     
+   
+             <p><lightning-formatted-text value="Penta Band - 5G-LTE - Wi-Fi - NFC - A-GPS" ></lightning-formatted-text></p>
+             <p><lightning-formatted-text value="Fotocamera posteriore: 108 Megapixel" ></lightning-formatted-text></p>
+             <p><lightning-formatted-text value="Android 12" ></lightning-formatted-text></p>
+   
+        <br>
+     
+     <lightning-button class="myButton" label="Aggiungi al carrello" onclick={handleSearchKeyword} icon-name="utility:cart" icon-position="right" variant="base" ></lightning-button>
+           </div>
+           
+           
+           
+           
+           </div>
+           
+           
+           
+           </lightning-layout-item>
+   
+   
+   
+   
+   </div>
+   
+   
+   
+   
+   
+   
+   
+   </lightning-layout>
+   
+   </div>
+   
+    </lightning-card>
+   
+   </template>
