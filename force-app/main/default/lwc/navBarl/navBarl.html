@@ -1,0 +1,81 @@
+<template >
+    <div class="demo-only demo-only--sizing slds-grid slds-wrap ">
+
+        <div class="slds-size_1-of-1">
+
+        
+            <div class="slds-box slds-box_xx-small slds-text-align_center slds-m-around_x-small">
+                <div class="slds-context-bar slds-m-around_none">
+                    <div class="slds-context-bar__primary ">
+                        <div class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click slds-no-hover"></divclass>
+                            
+                            <div class="slds-context-bar__icon-action">
+                            </div>
+                            <span class="slds-context-bar__label-action slds-context-bar__app-name">
+                            <span class="slds-m-right_large" title="App Name">Home </span>
+                            </span>
+                        </div>
+                    </div>
+            
+            
+            
+                
+            
+                <nav class="slds-context-bar__secondary" role="navigation">
+            
+                    <li class="slds-context-bar__item slds-is-active">
+                                <ul class="slds-grid">
+                                    
+                                        <a href="#" class="slds-context-bar__label-action" title="Home">
+                                            <span class="slds-assistive-text">Current Page:</span>
+                                            <span class="slds-m-right_large slds-m-left_large" title="Home">Cose1</span>
+                                        </a>
+                                        <a href="#" class="slds-context-bar__label-action" title="Home">
+                                            <span class="slds-assistive-text">Current Page:</span>
+                                            <span class="slds-m-right_large slds-m-left_large" title="Home">Cose2</span>
+                                        </a>
+                                        <a href="#" class="slds-context-bar__label-action" title="Home">
+                                            <span class="slds-assistive-text">Current Page:</span>
+                                            <span class="slds-m-right_large slds-m-left_large " title="Home">Cose3</span>
+                                        </a>
+                                        <a href="#" class="slds-context-bar__label-action" title="Home">
+                                            <span class="slds-assistive-text">Current Page:</span>
+                                            <span class="slds-m-right_large slds-m-left_large " title="Home">Cose4</span>
+                                        </a>
+                                        <a href="#" class="slds-context-bar__label-action" title="Home">
+                                            <span class="slds-assistive-text">Current Page:</span>
+                                            <span class="slds-m-right_large slds-m-left_large " title="Home">Cose5</span>
+                                        </a>
+                    
+                                <a href="#" class="slds-context-bar__label-action" title="Home">
+                                <span class="slds-assistive-text">Current Page:</span>
+                    
+                                <span class="slds-m-left_large" title="Home">
+                                    
+                                <lightning-input class="slds-m-bottom_x-large slds-m-top_small" type="text" value={searchValue} onchange={searchKeyword}></lightning-input>
+                                
+                                </span>
+                                </a>
+                                <a href="#" class="slds-context-bar__label-action" title="Home">
+                                <span class="slds-assistive-text">Current Page:</span>
+                                <span title="Home">
+                                
+                                <lightning-button  label="Search" onclick={handleSearchKeyword} variant="brand"></lightning-button>
+                                
+                                </span>
+                            </a>
+                              </ul> 
+                             </li>
+                            </nav>
+                        </div>   
+
+
+
+
+            </div>
+        </div> 
+
+    </div>
+
+
+</template>
